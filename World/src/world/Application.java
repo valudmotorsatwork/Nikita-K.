@@ -9,5 +9,4 @@ public class Application
       MainClass obj=new MainClass();
       }
 
-
 }

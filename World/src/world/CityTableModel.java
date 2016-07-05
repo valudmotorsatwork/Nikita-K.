@@ -12,7 +12,7 @@ public class CityTableModel extends AbstractTableModel
 	private List<City> cities;
 	/** the column names to show in JTable */
 	private static final String [] FIELD_NAMES =
-		{ "Name", "District", "Country", "Population" };
+		{ "ID","Name", "District", "Country", "Population" };
    
    public CityTableModel( ) {
 	   cities = new java.util.ArrayList<City>(); // to avoid NullPointer
@@ -36,10 +36,11 @@ public class CityTableModel extends AbstractTableModel
 	  if ( row >= cities.size() ) return "";
 	   City city =  cities.get(row);
 	   switch( col ) {  // this is hacky. Use Reflection.
-		case 0: return city.getName();
-		case 1: return city.getDistrict();
-		case 2: return city.getCountryCode();
-		case 3: return city.getPopulation();
+	    case 0:return city.getId();
+		case 1: return city.getName();
+	    case 2: return city.getDistrict();
+	   case 3: return city.getCountryCode();
+	   case 4: return city.getPopulation();
 		default: return "";
 	   }
   }
