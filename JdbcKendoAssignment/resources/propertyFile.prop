@@ -1,0 +1,6 @@
+#Property File For MySQL Database
+
+driver=com.mysql.jdbc.Driver
+url=jdbc:mysql://localhost:3306/world
+userName=sa
+password=sa123

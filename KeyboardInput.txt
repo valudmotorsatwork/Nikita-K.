@@ -1,0 +1,19 @@
+//4.Write a Java Application to demonstrate the concept taking input from keyboard.
+
+import java.io.*;
+import java.util.Scanner;
+
+public class javaIO 
+{
+	public static void main(String args[])
+	{
+		Student s=new Student();
+		Scanner scr=new Scanner(System.in);
+		System.out.println("Enter The String... ");
+		s.setName(scr.next());
+		System.out.println("You Entered The Name ="+ s.getName());
+    	
+	}
+	
+
+}
